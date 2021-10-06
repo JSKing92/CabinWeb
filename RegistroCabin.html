@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="JS/funciones.js"></script>
+    <title>Registro Cabaña</title>
+  </head>
+  <body>
+    <section class="modulo">
+      <nav class="opciones mod">
+        <a href="index.html">Inicio</a>
+        <a href="RegistroClient.html">Registrar Cliente</a>
+        <a href="RegistroMensaje.html">Registrar Mensajes</a>
+        <a href="consulta.html">Consultas</a>
+      </nav>
+      <div class="titulomodulo">
+        <h1>Registrar Cabaña</h1>
+      </div>
+      <fieldset class="frameform">
+        <legend>Datos Cabaña</legend>
+        <form class="contenedorformulario" action="">
+          <p class="Etiqueta" >ID</p>
+          <input type="text" id="id" class="field" required />
+          <p class="Etiqueta">BRAND</p>
+          <input type="text" id="brand" class="field" required />
+          <p class="Etiqueta">ROOMS</p>
+          <input type="number" id="rooms" class="field" required />
+          <p class="Etiqueta">CATEGORY ID</p>
+          <input type="number" id="category_id" class="field" required />
+          <p class="Etiqueta">NAME</p>
+          <input type="text" id="name" class="field" required/>
+          <input onclick="EnviarCabin()" class="boton" type="button" value="Registrar">
+        </form>
+      </fieldset>
+    </section>
+  </body>
+</html>
